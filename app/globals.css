@@ -693,591 +693,6 @@ footer .email:hover {
     line-height: 1.6;
   }
 
-/* =====================================
-   DOCUMENTOS
-===================================== */
-
-.documentsSection {
-  text-align: center;
-}
-
-.documentsIntro {
-  max-width: 580px;
-
-  margin:
-    calc(clamp(30px, 4vw, 52px) * -0.5)
-    auto
-    clamp(45px, 5vw, 70px);
-
-  color: var(--muted);
-
-  font-size: clamp(13px, 1.15vw, 16px);
-  line-height: 1.6;
-}
-
-
-/* Contenedor */
-
-.documentsList {
-  width: min(100%, 900px);
-
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-
-  gap: clamp(55px, 7vw, 85px);
-}
-
-
-/* =====================================
-   TARJETA PRINCIPAL
-===================================== */
-
-.resumeCard {
-  position: relative;
-
-  width: calc(100% - 80px);
-
-  min-height: clamp(270px, 26vw, 330px);
-
-  margin-left: auto;
-
-  padding:
-    clamp(35px, 4vw, 50px)
-    clamp(55px, 6vw, 75px)
-    clamp(35px, 4vw, 50px)
-    clamp(170px, 18vw, 220px);
-
-  background: var(--wine);
-
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.08);
-
-  border-radius:
-    clamp(18px, 2vw, 26px);
-
-  display: flex;
-  align-items: center;
-
-  text-align: left;
-
-  box-shadow:
-    0 25px 55px
-    rgba(0, 0, 0, 0.2);
-
-  transition:
-    transform 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-
-.resumeCard:hover {
-  transform: translateY(-6px);
-
-  border-color:
-    rgba(240, 87, 76, 0.4);
-
-  box-shadow:
-    0 30px 65px
-    rgba(0, 0, 0, 0.28);
-}
-
-
-/* =====================================
-   TARJETA QUE SOBRESALE
-===================================== */
-
-.resumePreview {
-  position: absolute;
-
-  left: clamp(-70px, -6vw, -45px);
-
-  top: 50%;
-
-  transform: translateY(-50%);
-
-  width: clamp(190px, 22vw, 250px);
-
-  aspect-ratio: 0.86 / 1;
-
-  border-radius:
-    clamp(16px, 2vw, 23px);
-
-  overflow: hidden;
-
-  background:
-    linear-gradient(
-      145deg,
-      var(--coral-2) 0%,
-      var(--coral) 42%,
-      var(--wine-2) 100%
-    );
-
-  box-shadow:
-    0 22px 45px
-    rgba(0, 0, 0, 0.35);
-
-  transition:
-    transform 0.3s ease;
-}
-
-
-/* decoraciones de la preview */
-
-.resumePreview::before {
-  content: "";
-
-  position: absolute;
-
-  width: 190px;
-  height: 190px;
-
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.13);
-
-  border-radius: 50%;
-
-  right: -80px;
-  bottom: -65px;
-}
-
-
-.resumePreview::after {
-  content: "";
-
-  position: absolute;
-
-  width: 120px;
-  height: 120px;
-
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.1);
-
-  border-radius: 50%;
-
-  right: -20px;
-  bottom: -40px;
-}
-
-
-.resumeCard:hover .resumePreview {
-  transform:
-    translateY(-50%)
-    translateX(-5px)
-    rotate(-1deg);
-}
-
-
-/* Contenido dentro del cuadrito */
-
-.previewContent {
-  position: relative;
-
-  z-index: 2;
-
-  width: 100%;
-  height: 100%;
-
-  padding:
-    clamp(18px, 2vw, 25px);
-
-  display: flex;
-  flex-direction: column;
-
-  justify-content: space-between;
-
-  color: white;
-}
-
-
-.previewLabel {
-  align-self: flex-start;
-
-  padding: 6px 10px;
-
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.45);
-
-  border-radius: 999px;
-
-  font-family:
-    "Space Grotesk",
-    sans-serif;
-
-  font-size: 10px;
-
-  font-weight: 700;
-
-  letter-spacing: 0.08em;
-}
-
-
-.previewContent small {
-  display: block;
-
-  margin-bottom: 4px;
-
-  color:
-    rgba(255, 255, 255, 0.72);
-
-  font-size:
-    clamp(9px, 0.8vw, 11px);
-
-  text-transform: uppercase;
-
-  letter-spacing: 0.08em;
-}
-
-
-.previewContent strong {
-  display: block;
-
-  font-family:
-    "Space Grotesk",
-    sans-serif;
-
-  font-size:
-    clamp(22px, 2.4vw, 31px);
-
-  line-height: 1;
-
-  letter-spacing: -0.04em;
-}
-
-
-/* =====================================
-   INFORMACIÓN
-===================================== */
-
-.resumeContent {
-  width: 100%;
-}
-
-
-.resumeType {
-  display: block;
-
-  margin-bottom: 7px;
-
-  color: var(--coral-2);
-
-  font-size:
-    clamp(10px, 0.85vw, 12px);
-
-  font-weight: 700;
-
-  letter-spacing: 0.08em;
-
-  text-transform: uppercase;
-}
-
-
-.resumeContent h3 {
-  margin-bottom: 12px;
-
-  color: var(--cream);
-
-  font-size:
-    clamp(22px, 2.2vw, 30px);
-
-  letter-spacing: -0.025em;
-}
-
-
-.resumeContent p {
-  max-width: 500px;
-
-  margin:
-    0
-    0
-    clamp(20px, 2.5vw, 28px);
-
-  color: var(--muted);
-
-  font-size:
-    clamp(12px, 1.05vw, 15px);
-
-  line-height: 1.65;
-}
-
-
-/* =====================================
-   BOTONES
-===================================== */
-
-.resumeActions {
-  display: flex;
-
-  align-items: center;
-
-  gap: 12px;
-
-  flex-wrap: wrap;
-}
-
-
-.resumeBtn {
-  padding:
-    11px
-    clamp(18px, 2vw, 25px);
-
-  background: var(--coral);
-
-  border-radius: 999px;
-
-  color: white;
-
-  font-size:
-    clamp(10px, 0.95vw, 13px);
-
-  font-weight: 700;
-
-  box-shadow:
-    0 10px 25px
-    rgba(240, 87, 76, 0.22);
-
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-
-.resumeBtn:hover {
-  background: var(--coral-2);
-
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 13px 30px
-    rgba(240, 87, 76, 0.32);
-}
-
-
-.resumeDownload {
-  padding: 10px 16px;
-
-  color: var(--muted);
-
-  font-size:
-    clamp(10px, 0.95vw, 13px);
-
-  font-weight: 600;
-
-  transition:
-    color 0.2s ease;
-}
-
-
-.resumeDownload:hover {
-  color: var(--cream);
-}
-
-
-/* =====================================
-   PUNTITOS DERECHOS
-===================================== */
-
-.cardDots {
-  position: absolute;
-
-  right: 18px;
-
-  top: 50%;
-
-  transform:
-    translateY(-50%);
-
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 7px;
-}
-
-
-.cardDots span {
-  width: 7px;
-  height: 7px;
-
-  border-radius: 50%;
-
-  background:
-    rgba(255, 255, 255, 0.18);
-}
-
-
-.cardDots .active {
-  height: 22px;
-
-  border-radius: 999px;
-
-  background: var(--coral);
-}
-
-
-/* =====================================
-   TABLET
-===================================== */
-
-@media (max-width: 800px) {
-
-  .documentsList {
-    width: calc(100% - 30px);
-  }
-
-  .resumeCard {
-    width: calc(100% - 50px);
-
-    min-height: 270px;
-
-    padding:
-      30px
-      45px
-      30px
-      145px;
-  }
-
-  .resumePreview {
-    left: -50px;
-
-    width: 180px;
-  }
-
-}
-
-
-/* =====================================
-   MOBILE
-===================================== */
-
-@media (max-width: 600px) {
-
-  .documentsIntro {
-    max-width: 90%;
-
-    margin-bottom: 55px;
-  }
-
-
-  .documentsList {
-    width: 100%;
-
-    gap: 65px;
-  }
-
-
-  .resumeCard {
-    width: calc(100% - 32px);
-
-    min-height: 245px;
-
-    margin-left: 32px;
-
-    padding:
-      25px
-      28px
-      25px
-      105px;
-
-    border-radius: 18px;
-  }
-
-
-  .resumePreview {
-    left: -32px;
-
-    width: 125px;
-
-    border-radius: 15px;
-  }
-
-
-  .previewContent {
-    padding: 14px;
-  }
-
-
-  .previewContent strong {
-    font-size: 17px;
-  }
-
-
-  .previewContent small {
-    font-size: 7px;
-  }
-
-
-  .previewLabel {
-    padding: 4px 7px;
-
-    font-size: 7px;
-  }
-
-
-  .resumeType {
-    font-size: 8px;
-  }
-
-
-  .resumeContent h3 {
-    margin-bottom: 8px;
-
-    font-size: 18px;
-  }
-
-
-  .resumeContent p {
-    margin-bottom: 15px;
-
-    font-size: 10px;
-
-    line-height: 1.5;
-  }
-
-
-  .resumeActions {
-    gap: 4px;
-  }
-
-
-  .resumeBtn {
-    padding: 8px 12px;
-
-    font-size: 8px;
-  }
-
-
-  .resumeDownload {
-    padding: 7px;
-
-    font-size: 8px;
-  }
-
-
-  .cardDots {
-    right: 10px;
-  }
-
-
-  .cardDots span {
-    width: 5px;
-    height: 5px;
-  }
-
-
-  .cardDots .active {
-    height: 16px;
-  }
-
-}
-
   /* ---------- CONTACTO ---------- */
 
   footer.section {
@@ -1434,5 +849,595 @@ footer .email:hover {
   .projects,
   .skillsGrid {
     gap: 6px;
+  }
+}
+
+/* =========================================================
+   DOCUMENTOS - TARJETAS TIPO CV
+========================================================= */
+
+.documentsSection {
+  width: min(100% - 8vw, 1180px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.documentsSection > h2 {
+  margin-bottom: 18px;
+}
+
+.documentsIntro {
+  width: min(100%, 620px);
+  margin: 0 auto 75px;
+
+  color: var(--muted);
+  font-size: clamp(14px, 1.2vw, 17px);
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   LISTA
+========================================================= */
+
+.documentsList {
+  width: min(100%, 920px);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 90px;
+}
+
+
+/* =========================================================
+   TARJETA GRANDE
+========================================================= */
+
+.resumeCard {
+  position: relative;
+
+  width: calc(100% - 80px);
+  min-height: 300px;
+
+  margin-left: auto;
+
+  padding:
+    45px
+    70px
+    45px
+    230px;
+
+  background: var(--wine);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.resumeCard:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(240, 87, 76, 0.45);
+
+  box-shadow:
+    0 32px 70px rgba(0, 0, 0, 0.32);
+}
+
+
+/* =========================================================
+   TARJETA PEQUEÑA IZQUIERDA
+========================================================= */
+
+.resumePreview {
+  position: absolute;
+
+  left: -80px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 260px;
+  height: 300px;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--coral-2) 0%,
+      var(--coral) 48%,
+      var(--wine-2) 100%
+    );
+
+  box-shadow:
+    0 25px 55px rgba(0, 0, 0, 0.4);
+
+  z-index: 3;
+
+  transition: transform 0.3s ease;
+}
+
+.resumeCard:hover .resumePreview {
+  transform:
+    translateY(-50%)
+    translateX(-7px)
+    rotate(-1.5deg);
+}
+
+
+/* círculos decorativos */
+
+.resumePreview::before {
+  content: "";
+
+  position: absolute;
+
+  width: 230px;
+  height: 230px;
+
+  right: -110px;
+  bottom: -70px;
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+}
+
+.resumePreview::after {
+  content: "";
+
+  position: absolute;
+
+  width: 160px;
+  height: 160px;
+
+  right: -50px;
+  bottom: -50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   CONTENIDO DE PREVIEW
+========================================================= */
+
+.previewContent {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  color: white;
+}
+
+.previewLabel {
+  width: fit-content;
+
+  padding: 6px 11px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+}
+
+.previewContent small {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.previewContent strong {
+  display: block;
+
+  color: white;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 32px;
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+}
+
+
+/* =========================================================
+   CONTENIDO DERECHA
+========================================================= */
+
+.resumeContent {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.resumeType {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--coral-2);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.resumeContent h3 {
+  margin: 0 0 13px;
+
+  color: var(--cream);
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: clamp(25px, 2.4vw, 32px);
+  line-height: 1.1;
+}
+
+.resumeContent p {
+  max-width: 500px;
+
+  margin: 0 0 25px;
+
+  color: var(--muted);
+
+  font-size: clamp(13px, 1.1vw, 15px);
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.resumeActions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.resumeBtn,
+.resumeDownload {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.resumeBtn {
+  min-width: 135px;
+
+  padding: 11px 21px;
+
+  background: var(--coral);
+
+  color: white;
+
+  border-radius: 999px;
+
+  box-shadow:
+    0 10px 25px rgba(240, 87, 76, 0.25);
+}
+
+.resumeBtn:hover {
+  background: var(--coral-2);
+
+  transform: translateY(-2px);
+}
+
+.resumeDownload {
+  padding: 10px 16px;
+
+  color: var(--cream);
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
+  border-radius: 999px;
+}
+
+.resumeDownload:hover {
+  color: var(--coral-2);
+
+  border-color: var(--coral);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   PUNTOS DERECHA
+========================================================= */
+
+.cardDots {
+  position: absolute;
+
+  top: 50%;
+  right: 22px;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.cardDots span {
+  display: block;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.cardDots span.active {
+  width: 7px;
+  height: 25px;
+
+  background: var(--coral);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .documentsList {
+    width: calc(100% - 50px);
+
+    gap: 75px;
+  }
+
+  .resumeCard {
+    width: calc(100% - 55px);
+
+    min-height: 270px;
+
+    padding:
+      35px
+      50px
+      35px
+      175px;
+  }
+
+  .resumePreview {
+    left: -55px;
+
+    width: 205px;
+    height: 240px;
+  }
+
+  .previewContent strong {
+    font-size: 25px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .documentsSection {
+    width: calc(100% - 30px);
+  }
+
+  .documentsIntro {
+    width: 90%;
+
+    margin-bottom: 60px;
+
+    font-size: 12px;
+  }
+
+  .documentsList {
+    width: 100%;
+
+    gap: 65px;
+  }
+
+
+  /* La tarjeta mantiene el mismo concepto
+     de la referencia incluso en móvil */
+
+  .resumeCard {
+    width: calc(100% - 35px);
+
+    min-height: 230px;
+
+    margin-left: 35px;
+
+    padding:
+      24px
+      28px
+      24px
+      105px;
+
+    border-radius: 18px;
+  }
+
+  .resumePreview {
+    left: -35px;
+
+    width: 125px;
+    height: 170px;
+
+    border-radius: 15px;
+  }
+
+  .previewContent {
+    padding: 13px;
+  }
+
+  .previewLabel {
+    padding: 4px 7px;
+
+    font-size: 7px;
+  }
+
+  .previewContent small {
+    margin-bottom: 3px;
+
+    font-size: 7px;
+  }
+
+  .previewContent strong {
+    font-size: 17px;
+  }
+
+  .resumeType {
+    margin-bottom: 5px;
+
+    font-size: 7px;
+  }
+
+  .resumeContent h3 {
+    margin-bottom: 7px;
+
+    font-size: 18px;
+  }
+
+  .resumeContent p {
+    margin-bottom: 13px;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+  }
+
+  .resumeActions {
+    gap: 6px;
+
+    flex-wrap: wrap;
+  }
+
+  .resumeBtn,
+  .resumeDownload {
+    font-size: 8px;
+  }
+
+  .resumeBtn {
+    min-width: auto;
+
+    padding: 8px 11px;
+  }
+
+  .resumeDownload {
+    padding: 7px 10px;
+  }
+
+  .cardDots {
+    right: 9px;
+
+    gap: 5px;
+  }
+
+  .cardDots span {
+    width: 5px;
+    height: 5px;
+  }
+
+  .cardDots span.active {
+    width: 5px;
+    height: 16px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE PEQUEÑO
+========================================================= */
+
+@media (max-width: 390px) {
+
+  .resumeCard {
+    margin-left: 28px;
+
+    width: calc(100% - 28px);
+
+    padding-left: 90px;
+  }
+
+  .resumePreview {
+    left: -28px;
+
+    width: 108px;
+    height: 155px;
+  }
+
+  .resumeContent h3 {
+    font-size: 16px;
+  }
+
+  .resumeContent p {
+    font-size: 8px;
   }
 }
