@@ -166,12 +166,6 @@ export default function Home() {
 
               </div>
 
-              <div className="cardDots">
-                <span className="active"></span>
-                <span></span>
-                <span></span>
-              </div>
-
             </article>
 
 
@@ -221,12 +215,6 @@ export default function Home() {
                   </a>
                 </div>
 
-              </div>
-
-              <div className="cardDots">
-                <span className="active"></span>
-                <span></span>
-                <span></span>
               </div>
 
             </article>

@@ -1205,45 +1205,6 @@ footer .email:hover {
 
 
 /* =========================================================
-   PUNTOS DERECHA
-========================================================= */
-
-.cardDots {
-  position: absolute;
-
-  top: 50%;
-  right: 22px;
-
-  transform: translateY(-50%);
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-
-  gap: 7px;
-}
-
-.cardDots span {
-  display: block;
-
-  width: 7px;
-  height: 7px;
-
-  border-radius: 999px;
-
-  background: rgba(255, 255, 255, 0.18);
-}
-
-.cardDots span.active {
-  width: 7px;
-  height: 25px;
-
-  background: var(--coral);
-}
-
-
-/* =========================================================
    TABLET
 ========================================================= */
 
@@ -1304,9 +1265,6 @@ footer .email:hover {
     gap: 65px;
   }
 
-
-  /* La tarjeta mantiene el mismo concepto
-     de la referencia incluso en móvil */
 
   .resumeCard {
     width: calc(100% - 35px);
