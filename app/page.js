@@ -108,91 +108,131 @@ export default function Home() {
         </section>
 
         <section className="section documentsSection" id="documentos">
-  <h2>
-    Mis <span>Documentos</span>
-  </h2>
+          <h2>
+            Mis <span>Documentos</span>
+          </h2>
 
-  <p className="documentsIntro">
-    Conoce más sobre mi experiencia, formación y habilidades profesionales.
-  </p>
-
-  <div className="documentsGrid">
-
-    <article className="documentCard">
-      <div className="documentIcon">
-        <span>PDF</span>
-      </div>
-
-      <div className="documentInfo">
-        <span className="documentType">Documento profesional</span>
-
-        <h3>Hoja de Vida</h3>
-
-        <p>
-          Experiencia, formación, habilidades técnicas,
-          certificaciones y proyectos.
-        </p>
-
-        <div className="documentActions">
-          <a
-            href="/documents/hoja-de-vida-elizabeth.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="documentPrimary"
-          >
-            Ver documento
-          </a>
-
-          <a
-            href="/documents/hoja-de-vida-elizabeth.pdf"
-            download
-            className="documentDownload"
-          >
-            Descargar ↓
-          </a>
-        </div>
-      </div>
-    </article>
-
-
-    <article className="documentCard">
-        <div className="documentIcon">
-          <span>CV</span>
-        </div>
-
-        <div className="documentInfo">
-          <span className="documentType">Currículum profesional</span>
-
-          <h3>Currículum</h3>
-
-          <p>
-            Perfil profesional, proyectos, tecnologías,
-            educación y experiencia.
+          <p className="documentsIntro">
+            Consulta mi información profesional, experiencia, proyectos y formación.
           </p>
 
-          <div className="documentActions">
-            <a
-              href="/documents/curriculum-elizabeth.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="documentPrimary"
-            >
-              Ver documento
-            </a>
+          <div className="documentsList">
 
-            <a
-              href="/documents/curriculum-elizabeth.pdf"
-              download
-              className="documentDownload"
-            >
-              Descargar ↓
-            </a>
+            {/* HOJA DE VIDA */}
+            <article className="resumeCard">
+
+              <div className="resumePreview">
+                <div className="previewContent">
+                  <span className="previewLabel">PDF</span>
+
+                  <div>
+                    <small>Documento</small>
+                    <strong>Hoja de<br />Vida</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="resumeContent">
+
+                <span className="resumeType">
+                  Documento profesional
+                </span>
+
+                <h3>Hoja de Vida</h3>
+
+                <p>
+                  Conoce mi experiencia, formación académica,
+                  habilidades técnicas, certificaciones y proyectos.
+                </p>
+
+                <div className="resumeActions">
+                  <a
+                    href="/documents/hoja-de-vida-elizabeth.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="resumeBtn"
+                  >
+                    Ver documento
+                  </a>
+
+                  <a
+                    href="/documents/hoja-de-vida-elizabeth.pdf"
+                    download
+                    className="resumeDownload"
+                  >
+                    Descargar ↓
+                  </a>
+                </div>
+
+              </div>
+
+              <div className="cardDots">
+                <span className="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+
+            </article>
+
+
+            {/* CURRÍCULUM */}
+            <article className="resumeCard">
+
+              <div className="resumePreview">
+                <div className="previewContent">
+                  <span className="previewLabel">CV</span>
+
+                  <div>
+                    <small>Currículum</small>
+                    <strong>Elizabeth<br />Navidad</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="resumeContent">
+
+                <span className="resumeType">
+                  Perfil profesional
+                </span>
+
+                <h3>Currículum 2026</h3>
+
+                <p>
+                  Perfil profesional, tecnologías, proyectos,
+                  educación y experiencia en desarrollo de software.
+                </p>
+
+                <div className="resumeActions">
+                  <a
+                    href="/documents/curriculum-elizabeth.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="resumeBtn"
+                  >
+                    Ver documento
+                  </a>
+
+                  <a
+                    href="/documents/curriculum-elizabeth.pdf"
+                    download
+                    className="resumeDownload"
+                  >
+                    Descargar ↓
+                  </a>
+                </div>
+
+              </div>
+
+              <div className="cardDots">
+                <span className="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+
+            </article>
+
           </div>
-        </div>
-      </article>
-
-    </div>
-  </section>
+        </section>
 
         <footer className="section" id="contacto">
           <h2>Contacto</h2>
