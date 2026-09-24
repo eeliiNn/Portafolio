@@ -107,6 +107,93 @@ export default function Home() {
           </p>
         </section>
 
+        <section className="section documentsSection" id="documentos">
+  <h2>
+    Mis <span>Documentos</span>
+  </h2>
+
+  <p className="documentsIntro">
+    Conoce más sobre mi experiencia, formación y habilidades profesionales.
+  </p>
+
+  <div className="documentsGrid">
+
+    <article className="documentCard">
+      <div className="documentIcon">
+        <span>PDF</span>
+      </div>
+
+      <div className="documentInfo">
+        <span className="documentType">Documento profesional</span>
+
+        <h3>Hoja de Vida</h3>
+
+        <p>
+          Experiencia, formación, habilidades técnicas,
+          certificaciones y proyectos.
+        </p>
+
+        <div className="documentActions">
+          <a
+            href="/documents/hoja-de-vida-elizabeth.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="documentPrimary"
+          >
+            Ver documento
+          </a>
+
+          <a
+            href="/documents/hoja-de-vida-elizabeth.pdf"
+            download
+            className="documentDownload"
+          >
+            Descargar ↓
+          </a>
+        </div>
+      </div>
+    </article>
+
+
+    <article className="documentCard">
+        <div className="documentIcon">
+          <span>CV</span>
+        </div>
+
+        <div className="documentInfo">
+          <span className="documentType">Currículum profesional</span>
+
+          <h3>Currículum</h3>
+
+          <p>
+            Perfil profesional, proyectos, tecnologías,
+            educación y experiencia.
+          </p>
+
+          <div className="documentActions">
+            <a
+              href="/documents/curriculum-elizabeth.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="documentPrimary"
+            >
+              Ver documento
+            </a>
+
+            <a
+              href="/documents/curriculum-elizabeth.pdf"
+              download
+              className="documentDownload"
+            >
+              Descargar ↓
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
         <footer className="section" id="contacto">
           <h2>Contacto</h2>
 
